@@ -41,7 +41,6 @@ Before diving into Mythic, let’s make sure your system is fully up-to-date. Ru
 apt-get update && apt-get upgrade -y
 ```
 Once that’s done, we can start setting up Mythic.
-![Alt text](URL_to_image)
 
 ## Step 4: Install Docker Compose & Make
 Mythic requires Docker to run, so the next step is to install Docker Compose and Make.
@@ -50,7 +49,7 @@ Mythic requires Docker to run, so the next step is to install Docker Compose and
 ```bash
 apt install docker-compose
 ```
-![Alt text](URL_to_image)
+![Alt text](https://raw.githubusercontent.com/Virus192/Day-20-Setting-Up-Your-Own-Mythic-C2-Instance/refs/heads/main/Images/photo_6012391733054260184_w.jpg)
 
 Install Make:
 ```bash
@@ -64,7 +63,7 @@ Now, let’s clone Mythic from its GitHub repository. Run the following command:
 ```bash
 git clone https://github.com/its-a-feature/Mythic
 ```
-![Alt text](URL_to_image)
+![Alt text](https://raw.githubusercontent.com/Virus192/Day-20-Setting-Up-Your-Own-Mythic-C2-Instance/refs/heads/main/Images/photo_60123917330542601842_w.jpg)
 
 Once cloned, navigate into the Mythic directory:
 
@@ -84,7 +83,7 @@ systemctl status docker
 ```
 Make sure Docker shows an “active” status before proceeding.
 
-![Alt text](URL_to_image)
+![Alt text](https://raw.githubusercontent.com/Virus192/Day-20-Setting-Up-Your-Own-Mythic-C2-Instance/refs/heads/main/Images/photo_6012391733054260185_w.jpg)
 
 ## Step 6: Start Mythic
 Now that Docker is running, we can start Mythic using the `make` command:
@@ -100,7 +99,6 @@ This will set up everything in the background. Once that’s done, start the Myt
 
 Congratulations! Your Mythic C2 instance is now up and running. But wait, there’s one more thing we need to do before accessing the Mythic Web GUI.
 
-![Alt text](URL_to_image)
 
 ## Step 7: Configure Your Firewall
 Before you go any further, it’s crucial to set up a firewall. This ensures that only specific machines—like your own and your target—can communicate with the Mythic server. You don’t want the entire internet trying to poke around!
@@ -109,7 +107,6 @@ To do this, head back to Vultr and create a new Firewall Group. Add the IP addre
 
 Once that’s configured, you’re all set to access Mythic.
 
-![Alt text](URL_to_image)
 
 ## Step 8: Access the Mythic Web GUI
 Now for the fun part! Open your browser and navigate to the Mythic Web GUI using the IP address of your Mythic server:
@@ -130,18 +127,16 @@ This will show hidden files, including `.env`. Open that file by running:
 cat .env
 ```
 
-![Alt text](URL_to_image)
-
 Scroll down to find `MYTHIC_ADMIN_PASSWORD=`. Copy that password and paste it into the login page. Now you’re in!
 
-![Alt text](URL_to_image)
+![Alt text](https://raw.githubusercontent.com/Virus192/Day-20-Setting-Up-Your-Own-Mythic-C2-Instance/refs/heads/main/Images/photo_6012391733054260189_w.jpg)
 
 ## Mythic Overview
 Once logged in, you’ll be greeted by the Mythic dashboard — a sleek, intuitive interface that’s ready to orchestrate your C2 operations. From here, you can manage agents, profiles, and tasks with ease.
 
 But that’s a story for another day.
 
-![Alt text](URL_to_image)
+![Alt text](https://raw.githubusercontent.com/Virus192/Day-20-Setting-Up-Your-Own-Mythic-C2-Instance/refs/heads/main/Images/photo_6012391733054260194_w%20(1).jpg)
 
 ## What’s Next?
 In my next challenge, we’ll dive deeper into Kali Linux, generate payloads, and use a C2 profile to create a Mythic agent that can establish communication with our Windows server. Remember, Mythic is powerful, but with great power comes great responsibility. Always practice in controlled environments and be mindful of what you’re doing.
