@@ -34,7 +34,6 @@ ssh root@<your-server-ip>
 
 You’ll be prompted for your password, which you can find in the Vultr console. Once you’re in, it’s time to get to work!
 
-![Alt text](URL_to_image)
 
 ## Step 3: Update & Upgrade Your Server
 Before diving into Mythic, let’s make sure your system is fully up-to-date. Run the following commands to update your repositories and upgrade the installed packages:
@@ -42,6 +41,7 @@ Before diving into Mythic, let’s make sure your system is fully up-to-date. Ru
 apt-get update && apt-get upgrade -y
 ```
 Once that’s done, we can start setting up Mythic.
+![Alt text](URL_to_image)
 
 ## Step 4: Install Docker Compose & Make
 Mythic requires Docker to run, so the next step is to install Docker Compose and Make.
